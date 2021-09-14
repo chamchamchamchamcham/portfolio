@@ -233,6 +233,7 @@ footer{
 works.html
 --------------------------------------------------------*/
 main{
+	margin: 0 auto;
 	width: 980px;
 	height: 1300px;
 }
