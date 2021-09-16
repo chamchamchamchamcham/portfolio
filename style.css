@@ -148,23 +148,41 @@ WORKS
 
 .works-list1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,300px);
     text-align: center;
     margin-top: 30px;
 }
-
+@media screen and (max-width: 768px) {
+.works-list{
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,300px);
+  }
+}
 .works-list2{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: 300px;
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+.works-list2{
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,300px);
+  }
 }
 
 .works-list3{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(224px,1fr));
+    grid-template-columns: repeat(4, 224px);
+    grid-template-rows: repeat(3, 224px);
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+.works-list3{
+    grid-template-columns: repeat(2, 224px);
+    grid-template-rows: repeat(6,224px);
+  }
 }
 
 .works-list4{
@@ -223,30 +241,41 @@ SKILL
 
 .skill-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,300px);
+    column-gap: 30px;
     text-align: center;
     border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
 .skill-list{
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
-    width: auto;
-    height: auto;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(4,300px);
   }
 }
 
 .grid-item{
   width: 300px;
-  margin: 0 auto 20px;
-  text-align: center;
+  margin: 0 auto 20px; 
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #808080;
 }
 
 @media screen and (max-width: 768px) {
-.grid-item img{
-    width: auto;
+.grid-item{
+    width: 250px;
     height: auto;
+  }
+}
+
+.grid-item img{
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+.grid-item img{
+    width: 50%;
   }
 }
 .skill-contents1{
@@ -269,6 +298,7 @@ SKILL
 }
 @media screen and (max-width: 768px) {
 .skill-text{
+    width: auto;
     height: auto;
   }
 }
