@@ -267,6 +267,7 @@ SKILL
 .grid-item{
     width: 250px;
     height: auto;
+    text-align: left;
   }
 }
 
