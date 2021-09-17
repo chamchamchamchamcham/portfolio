@@ -292,10 +292,10 @@ SKILL
   	width: 100%;
   }
 }
-.skill-text{
-	width: 300px;
-	text-align: left;
+.skill-title{
+  font-family: fantasy;
 }
+
 @media screen and (max-width: 768px) {
 .skill-text{
     width: auto;
