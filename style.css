@@ -421,13 +421,6 @@ works.html
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
-.setsumei{ 
-  width: 100px;
-  height: 100px;
-  }
-}
-
 .pageTop_btn img{
   width: 100%;
   height: auto;
