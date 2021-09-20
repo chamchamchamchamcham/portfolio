@@ -419,6 +419,7 @@ works.html
   bottom: 30px;
   right: 30px;
   cursor: pointer;
+  display: none;
 }
 
 .pageTop_btn img{
